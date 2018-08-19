@@ -1,0 +1,10 @@
+development:
+  adapter: postgresql
+  host: "localhost"
+  username: "inmar"
+  password: "000000"
+  database: inmar_dev
+  port: 5432
+  reconnect: true
+  pool: 10
+  timeout: 5000
