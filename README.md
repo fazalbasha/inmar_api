@@ -5,20 +5,23 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version - 2.5.1
 
-* System dependencies
+* Rails version - 5.2.1
 
-* Configuration
+* Clone project - git@github.com:fazalbasha/inmar_api.git
 
-* Database creation
+* Run bundle
 
-* Database initialization
+* Database adapter - postgresql
 
-* How to run the test suite
+* Steps to create Database
+  - sudo -u postgres psql
+  - create user inmar with password '000000';
+  - GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO inmar;
+  - ALTER USER inmar WITH SUPERUSER;
+  - create database inmar_dev owner inmar;
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* To run api - rails server or rails s
 
 * ...
